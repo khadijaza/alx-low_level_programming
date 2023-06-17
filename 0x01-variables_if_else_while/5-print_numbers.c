@@ -1,19 +1,19 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- * main - Entry point
- * Description: print all single digit numbers
- * Return: Always 0 (Success)
+ * main - print numbers of base ten
+ *
+ * Return: Always (0)
+ *
 */
-
 int main(void)
 {
-int digit = 0;
-while (digit <= 9)
-{
-	printf("%i". digit);
-	digit++;
-}
-printf("\n");
-return (0);
+	int base_ten = 0;
+
+	while (base_ten <= 10)
+	{
+		putchar(base_ten);
+		base_ten++;
+	}
+	putchar('\n');
+	return (0);
 }
