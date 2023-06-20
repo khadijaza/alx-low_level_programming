@@ -2,18 +2,20 @@
 
 /**
  * print_times_table - prints time table of n
+ *
  * @n: takes number input
 */
-void print_times_tables(int n)
+
+void print_times_table(int n)
 {
 	int prod, mult, num;
 
 	if (n <= 15 && n >= 0)
 	{
-		for (num = 0; num <= n; ++num)
+		for (num = 0; num <= n; num++)
 		{
 			_putchar(48);
-			for (mult = 1; mult <= n; ++mult)
+			for (mult = 1; mult <= n; mult++)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -24,6 +26,7 @@ void print_times_tables(int n)
 					_putchar(' ');
 				if (prod <= 99)
 					_putchar(' ');
+
 				if (prod >= 100)
 				{
 					_putchar((prod / 100) + 48);
